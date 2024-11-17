@@ -1,0 +1,41 @@
+﻿@model ProductCreateDto
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<form method="post">
+
+    <input asp-for="Name" placeholder="name"/>
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <br />
+    <br />
+    <br />
+
+
+
+    <input asp-for="Description" placeholder="Description" />
+    <span asp-validation-for="Description" class="text-danger"></span>
+    <br />
+    <br />
+    <br />
+
+
+
+
+
+    <input asp-for="Price" placeholder="Price" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+
+    <br />
+    <br />
+    <br />
+
+    <button type="submit">Post</button>
+
+</form>
